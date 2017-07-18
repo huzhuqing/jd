@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Administrator on 2017/7/17.
  */
 window.onload=function () {
@@ -121,7 +121,7 @@ function banner() {
     });
     JDBanner.addEventListener("touchend",function (event) {
         distanceX=moveX;
-        var maxDistance=width/2;
+        var maxDistance=width/3;
         if (Math.abs(distanceX)>maxDistance){
             // 判断往左滑还是往右滑
             if(moveX>0){
