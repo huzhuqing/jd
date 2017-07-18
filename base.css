@@ -1,0 +1,46 @@
+/*通用样式*/
+*,
+::before,::after{
+    margin: 0;
+    padding: 0;
+    font: 14px 微软雅黑;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input{
+    -webkit-appearance: none;
+    border: none;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style: none;
+}
+.fr_l{
+    float: left;
+}
+.fr_r{
+    float: right;
+}
+.b_l{
+    border-left: 1px solid #eee;
+}
+.b_r{
+    border-right: 1px solid #eee;
+}
+.b_t{
+    border-top: 1px solid #eee;
+}
+.b_b{
+    border-bottom: 1px solid #eee;
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}

@@ -1,0 +1,247 @@
+.jd_container{
+    width: 100%;
+}
+/*顶部通栏*/
+.jd_header{
+    height: 40px;
+    width: 100%;
+    /*background:rgb(208, 21, 35);*/
+    position: fixed;
+    padding-right: 60px;
+    padding-left: 70px;
+    z-index: 99;
+    background-color: rgba(201, 21, 35,0);
+}
+.header_logo{
+    display: block;
+    height: 22px;
+    width: 56px;
+    position: absolute;
+    /*background: #000;*/
+    background: url("images/sprites.png") no-repeat 0px -108px/200px 200px;
+    left: 5px;
+    top: 9px;
+}
+.header_search{
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 25px;
+    margin-top: 5px;
+}
+.header_glass{
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    background: url("images/sprites.png") no-repeat -60px -110px/200px 200px;
+    z-index: 99;
+}
+.header_login{
+    height: 40px;
+    position: absolute;
+    top:0;
+    right: 5px;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+    margin-right: 8px;
+}
+/*轮播图*/
+.jd_banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.banner_images{
+    width: 1000%;
+    /*默认移动一个屏幕的宽度*/
+    transform: translateX(-10%);
+}
+.banner_images li{
+    width: 10%;
+    float: left;
+}
+.banner_images li a{
+    display: block;
+    width: 100%;
+}
+.banner_images li a img{
+    display: block;
+    width: 100%;
+}
+.banner_index{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -44px;
+}
+.banner_index li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    /*background: #FFF;*/
+}
+.banner_index li.current{
+    background: #FFF;
+}
+/*导航栏*/
+.jd_nav{
+    width: 100%;
+    border-bottom:1px solid #eee;
+}
+.jd_nav ul{
+    width: 100%;
+    padding: 10px 0;
+}
+.jd_nav ul li{
+    float: left;
+    width: 25%;
+ }
+.jd_nav ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_nav ul li a img{
+    display: block;
+    width: 60%;
+    margin:0 auto;
+}
+.jd_nav ul li a p{
+    color: gray;
+    text-align: center;
+    padding:5px 0 ;
+}
+/*主要内容区*/
+.jd_main{
+    width: 100%;
+    padding:0 5px;
+    margin-top: 10px;
+}
+.main_content{
+    width: 100%;
+    margin-bottom: 3px;
+    box-shadow: 0 0 2px #aaa;
+}
+.content_top{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #eee;
+}
+.content_bottom{
+    width: 100%;
+}
+.jd_main .main_content:first-child .content_top{
+    border-bottom: none;
+}
+.jd_main .main_content:first-child .content_top span{
+    display: block;
+    width: 20px;
+    height: 25px;
+    background: url("images/seckill-icon.png") no-repeat 0/20px 25px;
+    margin:0 5px;
+    float: left;
+}
+.jd_main .main_content:first-child .content_top p{
+    height: 30px;
+    color: red;
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+}
+.jd_main .main_content:first-child .content_top ul{
+    margin:7px 0;
+}
+.jd_main .main_content:first-child .content_top ul li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    color: white;
+    margin-left:3px;
+    line-height: 15px;
+    text-align: center;
+}
+.jd_main .main_content:first-child .content_top ul li:nth-child(3n){
+    background: #fff;
+    color: #000;
+}
+
+.jd_main .main_content:first-child .content_top a{
+    display: block;
+    float: right;
+    color: #aaa;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+.jd_main .main_content:first-child .content_bottom ul{
+    width: 100%;
+}
+.jd_main .main_content:first-child .content_bottom ul li{
+    width: 33.3333%;
+    float: left;
+}
+.jd_main .main_content:first-child .content_bottom ul li a{
+    display: block;
+    width: 100%;
+    border-right:1px solid #aaaaaa;
+}
+.jd_main .main_content:first-child .content_bottom ul li:last-child a{
+    border-right:none;
+}
+.jd_main .main_content:first-child .content_bottom ul li a img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.jd_main .main_content:first-child .content_bottom ul li p{
+    text-align: center;
+    padding-top: 3px;
+}
+.jd_main .main_content:first-child .content_bottom ul li p:nth-child(2){
+    color: red;
+}
+.jd_main .main_content:first-child .content_bottom ul li p:nth-child(3){
+    text-decoration: line-through;
+}
+/*主要内容第二块*/
+.jd_main .main_content:nth-child(n+2) .content_top p{
+    height: 30px;
+    color: red;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    margin-left: 15px;
+}
+.jd_main .main_content:nth-child(n+2) .content_top p::before{
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 15px;
+    background: red;
+    position: absolute;
+    top:7px;
+    left: -9px;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul{
+    width: 100%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li{
+    /*border: 1px solid #EEEEEE;*/
+    width: 50%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a img{
+    display: block;
+    width: 100%;
+}
